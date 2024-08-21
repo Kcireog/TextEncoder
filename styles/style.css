@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+  --prymary-color: #e9ecf8;
+  --secundary-color: #f6f6f6;
+  --tertiary-color: #0a3871;
+
+  --prymary-font-inter: 'Inter', sans-serif;
+}
+
+/*Reset basico de estilos a todos los elementos de la pagina web, para que los valores predeterminados del navegador no sean problema*/
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  /* height: 100vh; */
+  box-sizing: border-box;
+  background-color: var(--prymary-color);
+  color: var(--secundary-color);
+}
+.header {
+  height: 10 vh;
+}
+.logo {
+  width: 100px;
+  height: 40px;
+  margin: 1% 0% 0% 0.4%;
+}
+
+.principal-content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px;
+  height: 78vh;
+  /* padding-bottom: 10px; */
+}
+.text-input-section {
+  margin-left: 10%; /*separa de la izquierda la entrada de texto, ademas de empujar el ouput a la derecha*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  gap: 12px;
+  color: var(--tertiary-color);
+}
+.input-aclaration {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#aclaration-img {
+  width: 16px;
+  height: 16px;
+}
+#input-textarea {
+  width: 70%;
+  height: 100%; /*para que ocupe el espacio dentro de la sección*/
+  font-family: var(--prymary-font-inter);
+  font-size: 2rem; /*1rem = 16px*/
+  background-color: transparent;
+  border: none;
+  resize: none;
+  outline: none;
+}
+#input-textarea::placeholder {
+  color: var(--tertiary-color);
+}
+#aclaration-text {
+  text-align: left;
+  font-family: var(--prymary-font-inter);
+  font-size: 0.75rem;
+}
+#text-output {
+  font-family: var(--prymary-font-inter);
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--secundary-color);
+}
+#encrypt-button {
+  background-color: var(--tertiary-color);
+  border: 2px solid var(--tertiary-color);
+  color: var(--prymary-color);
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  font-family: var(--prymary-font-inter);
+  font-size: 1rem;
+}
+#decrypt-button {
+  background-color: var(--prymary-color);
+  color: var(--tertiary-color);
+  border: 2px solid var(--tertiary-color);
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  font-family: var(--prymary-font-inter);
+  font-size: 1rem;
+}
+#copy-button {
+  background-color: var(--secundary-color);
+  color: var(--tertiary-color);
+  border: 2px solid var(--tertiary-color);
+  width: 90%;
+  height: 67px;
+  border-radius: 24px;
+  font-family: var(--prymary-font-inter);
+  font-size: 1rem;
+  display: none;
+}
+.input-container-buttons {
+  display: flex;
+  gap: 24px;
+}
+.output-container-buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.text-output-section {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secundary-color);
+  border-radius: 30px;
+  padding: 2.5%;
+}
+#text-output-title {
+  margin-top: 2.5%;
+  text-align: center;
+  color: #343a40;
+  font-family: var(--prymary-font-inter);
+  font-size: 1.5 rem;
+  font-weight: 700; /*bold*/
+}
+#text-output-text {
+  margin-top: 4%;
+  text-align: center;
+  color: #495057;
+  font-family: var(--prymary-font-inter);
+  font-size: 1 rem;
+  font-weight: 400; /*regular/normal*/
+}
+.hide-text-output {
+  flex-grow: 1;
+}
+#text-output {
+  display: none;
+  font-family: var(--prymary-font-inter);
+  font-size: 1.5 rem;
+  color: #495057;
+  font-weight: 400;
+}
